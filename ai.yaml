@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-ai
+spec:
+  containers:
+    - name: ai
+      image: my-ai-image
+      resources:
+        limits:
+          nvidia.com/gpu: 1
